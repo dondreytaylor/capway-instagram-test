@@ -1,6 +1,6 @@
 # Developer Assessment
 
-Referencing the designs below, create an iOS application that mimics a minimal amount of functionality of Instagram.
+Referencing the designs below, create an iOS application that mimics a minimal amount and very basic functionality of an Instagram photo feed and user profile.
 
 ![Screens](readme-assets/screens.png)
 
