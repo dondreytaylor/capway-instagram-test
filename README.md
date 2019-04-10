@@ -22,15 +22,14 @@ Develop two screens: a screen for the photo feed (referred herein as "Photo Feed
 - **Photo Feed:** Load the photos into the feed upon load of the app and also on pull to refresh.
 - **Photo Feed:** Randomize the user icons above each photo (feel free to reuse the same photos you used for the profile pictures)
 - **Photo Feed:** User profile pictures within the feed should not be tappable.
-- **Photo Feed:** Tapping on a photo should make it appear within a popup. Feel free to style this as you wish. The photo does not need to transition from the feed into the popup, you're free to load the image again.
+- **Photo Feed:** Tapping on a photo should make it appear within a popup. You should be able to close the popup by tapping the black around around it. Feel free to style this as you wish. The photo does not need to transition from the feed into the popup, you're free to load the image again.
 - **Profile:** The profile screen is triggered when you click on a profile picture within the profile list above the content feed.
 - **Profile:** Make sure that the profile picture that you tapped gets carried over to the profile screen.
 - **Profile:** Each profile should have a unique name, number of followers, location, and number of following.
 - **Profile:** Like the Photo Feed, pull photos using Picsum for the photos listed on the profile. The list should be vertically scrollable. Photos do not have to be tappable.
 - **Photo Feed + Profile:** The tab bar below should have similar icons to the ones displayed in the screenshots.
-- **Photo Feed + Profile:** Tapping on the icons within the tab bar should trigger a popup with text saying "Tab Bar Option"
+- **Photo Feed + Profile:** Tapping on the icons within the tab bar should trigger a popup with text saying "Tab Bar Option". You should be able to close the popup by tapping the black around around it.
 - **Photo Feed + Profile:** Disregard the pink popup that appears over the heart icon, as you do not have to develop this.
-
 
 ### PHOTO FEED:
 
@@ -39,6 +38,11 @@ Develop two screens: a screen for the photo feed (referred herein as "Photo Feed
 ### PROFILE FEED:
 
 ![Screens-2](readme-assets/2.png)
+
+### BONUS:
+- Make the images tappable within the profile. Tapping the image should bring up a popup
+- Add a UIPanGesture to the popup allowing you to drag it around. 
+
 
 ## Submitting
 Once you have completed developing the application. Open a pull request https://github.com/dondreytaylor/instagram-test/pulls from your branch into master.
