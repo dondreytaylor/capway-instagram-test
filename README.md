@@ -13,6 +13,7 @@ Develop two screens: a screen for the photo feed (referred herein as "Photo Feed
 - Frequently commit your changes to GIT, with proper messages on each commit.
 - Colors should be the same hex/rgb values that appear within the screenshots
 - Code should be well documented, with adequate comments explaining each function.
+- Designs should scale down to at least iPhone 5.
 - **Photo Feed:** Use dummy photos for each of the user profile pictures.
 - **Photo Feed:** Profile photos should be unique.
 - **Photo Feed:** The profile photo list should be horizontally scrollable up to at least 15 pictures.
