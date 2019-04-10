@@ -41,7 +41,7 @@ Develop two screens: a screen for the photo feed (referred herein as "Photo Feed
 ![Screens-2](readme-assets/2.png)
 
 ### BONUS:
-- Make the images tappable within the profile. Tapping the image should bring up a popup
+- Make the images tappable within the profile. Tapping the image should bring up a popup containing that image.
 - Add a UIPanGesture to the popup allowing you to drag it around. 
 
 
