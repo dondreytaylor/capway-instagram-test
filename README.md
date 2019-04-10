@@ -43,4 +43,4 @@ Develop two screens: a screen for the photo feed (referred herein as "Photo Feed
 ## Submitting
 Once you have completed developing the application. Open a pull request https://github.com/dondreytaylor/instagram-test/pulls from your branch into master.
 
-If you have any questions about the tech or design specifications or have submitted your application, please email dondrey@capway.co and cc:** careers@capway.co.
+If you have any questions about the tech or design specifications or have submitted your application, please email dondrey@capway.co and cc: careers@capway.co.
