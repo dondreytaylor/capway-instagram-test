@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5EE5279225F9747009B334F /* PhotoFeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EE5277225F9747009B334F /* PhotoFeeCollectionViewCell.swift */; };
+		A5EE527A225F9747009B334F /* PhotoFeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5EE5278225F9747009B334F /* PhotoFeeCollectionViewCell.xib */; };
+		A5F26330225F891F00CA4981 /* PhotFeedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F2632E225F891F00CA4981 /* PhotFeedsTableViewCell.swift */; };
+		A5F26331225F891F00CA4981 /* PhotFeedsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F2632F225F891F00CA4981 /* PhotFeedsTableViewCell.xib */; };
 		A5F3FCFF225F53AD007A718A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3FCFE225F53AD007A718A /* AppDelegate.swift */; };
 		A5F3FD01225F53AD007A718A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3FD00225F53AD007A718A /* ViewController.swift */; };
 		A5F3FD06225F53B2007A718A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5F3FD05225F53B2007A718A /* Assets.xcassets */; };
@@ -43,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A5EE5277225F9747009B334F /* PhotoFeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A5EE5278225F9747009B334F /* PhotoFeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoFeeCollectionViewCell.xib; sourceTree = "<group>"; };
+		A5F2632E225F891F00CA4981 /* PhotFeedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotFeedsTableViewCell.swift; sourceTree = "<group>"; };
+		A5F2632F225F891F00CA4981 /* PhotFeedsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotFeedsTableViewCell.xib; sourceTree = "<group>"; };
 		A5F3FCFB225F53AD007A718A /* capwayAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = capwayAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F3FCFE225F53AD007A718A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F3FD00225F53AD007A718A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +127,10 @@
 				A5F3FD00225F53AD007A718A /* ViewController.swift */,
 				A5F3FD2C225F53FB007A718A /* PhotoFeedViewController.swift */,
 				A5F3FD2D225F53FB007A718A /* PhotoFeedViewController.xib */,
+				A5F2632E225F891F00CA4981 /* PhotFeedsTableViewCell.swift */,
+				A5F2632F225F891F00CA4981 /* PhotFeedsTableViewCell.xib */,
+				A5EE5277225F9747009B334F /* PhotoFeeCollectionViewCell.swift */,
+				A5EE5278225F9747009B334F /* PhotoFeeCollectionViewCell.xib */,
 				A5F3FD30225F5421007A718A /* ProfileViewController.swift */,
 				A5F3FD31225F5421007A718A /* ProfileViewController.xib */,
 				A5F3FD36225F5BD9007A718A /* HomeViewController.swift */,
@@ -256,8 +268,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F26331225F891F00CA4981 /* PhotFeedsTableViewCell.xib in Resources */,
 				A5F3FD41225F5C08007A718A /* NotificationsViewController.xib in Resources */,
 				A5F3FD09225F53B2007A718A /* LaunchScreen.storyboard in Resources */,
+				A5EE527A225F9747009B334F /* PhotoFeeCollectionViewCell.xib in Resources */,
 				A5F3FD06225F53B2007A718A /* Assets.xcassets in Resources */,
 				A5F3FD3D225F5BF0007A718A /* SearchViewController.xib in Resources */,
 				A5F3FD39225F5BD9007A718A /* HomeViewController.xib in Resources */,
@@ -291,8 +305,10 @@
 				A5F3FD38225F5BD9007A718A /* HomeViewController.swift in Sources */,
 				A5F3FD01225F53AD007A718A /* ViewController.swift in Sources */,
 				A5F3FCFF225F53AD007A718A /* AppDelegate.swift in Sources */,
+				A5F26330225F891F00CA4981 /* PhotFeedsTableViewCell.swift in Sources */,
 				A5F3FD32225F5421007A718A /* ProfileViewController.swift in Sources */,
 				A5F3FD40225F5C08007A718A /* NotificationsViewController.swift in Sources */,
+				A5EE5279225F9747009B334F /* PhotoFeeCollectionViewCell.swift in Sources */,
 				A5F3FD2E225F53FB007A718A /* PhotoFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
