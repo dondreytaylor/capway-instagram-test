@@ -12,11 +12,70 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let navigationController = UINavigationController()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //configure window
+        self.window = UIWindow( frame: UIScreen.main.bounds)
+        
+        //set navigationController properties
+        setUpAppearance()
+        //create tabs
+        let profile = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+        let photos = PhotoFeedViewController(nibName: "PhotoFeedViewController", bundle: nil)
+        let home = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let search = SearchViewController(nibName: "SearchViewController", bundle: nil)
+        let likes = NotificationsViewController(nibName: "NotificationsViewController", bundle: nil)
+        
+        
+        let controllers = [home, search, photos, likes, profile]
+        
+        //create tab bar controller
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = controllers
+        
+        //set up tab bar ui and labels
+        profile.tabBarItem = UITabBarItem(
+            title: "Profile",
+            image: nil,
+            tag: 5)
+        photos.tabBarItem = UITabBarItem(
+            title: "PhotoFeed",
+            image: nil ,
+            tag:3)
+        home.tabBarItem = UITabBarItem(
+            title: "Profile",
+            image: nil,
+            tag: 1)
+        search.tabBarItem = UITabBarItem(
+            title: "PhotoFeed",
+            image: nil ,
+            tag:2)
+        likes.tabBarItem = UITabBarItem(
+            title: "Profile",
+            image: nil,
+            tag:4)
+        
+        
+        //add tab bar to navigation controller
+        navigationController.viewControllers = [tabBarController]
+        
+        //make window visible and set root view
+        self.window!.rootViewController = UINavigationController(rootViewController: tabBarController)
+        self.window!.makeKeyAndVisible()
+
+    
         return true
+    }
+    
+    func setUpAppearance(){
+        UINavigationBar.appearance().barTintColor = UIColor.black
+        UINavigationBar.appearance().tintColor = UIColor.black
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

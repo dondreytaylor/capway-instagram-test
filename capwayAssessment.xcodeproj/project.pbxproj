@@ -17,6 +17,12 @@
 		A5F3FD2F225F53FB007A718A /* PhotoFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F3FD2D225F53FB007A718A /* PhotoFeedViewController.xib */; };
 		A5F3FD32225F5421007A718A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3FD30225F5421007A718A /* ProfileViewController.swift */; };
 		A5F3FD33225F5421007A718A /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F3FD31225F5421007A718A /* ProfileViewController.xib */; };
+		A5F3FD38225F5BD9007A718A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3FD36225F5BD9007A718A /* HomeViewController.swift */; };
+		A5F3FD39225F5BD9007A718A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F3FD37225F5BD9007A718A /* HomeViewController.xib */; };
+		A5F3FD3C225F5BF0007A718A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3FD3A225F5BF0007A718A /* SearchViewController.swift */; };
+		A5F3FD3D225F5BF0007A718A /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F3FD3B225F5BF0007A718A /* SearchViewController.xib */; };
+		A5F3FD40225F5C08007A718A /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3FD3E225F5C08007A718A /* NotificationsViewController.swift */; };
+		A5F3FD41225F5C08007A718A /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F3FD3F225F5C08007A718A /* NotificationsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		A5F3FD2D225F53FB007A718A /* PhotoFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoFeedViewController.xib; sourceTree = "<group>"; };
 		A5F3FD30225F5421007A718A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A5F3FD31225F5421007A718A /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		A5F3FD36225F5BD9007A718A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A5F3FD37225F5BD9007A718A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A5F3FD3A225F5BF0007A718A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A5F3FD3B225F5BF0007A718A /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		A5F3FD3E225F5C08007A718A /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		A5F3FD3F225F5C08007A718A /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,12 @@
 				A5F3FD2D225F53FB007A718A /* PhotoFeedViewController.xib */,
 				A5F3FD30225F5421007A718A /* ProfileViewController.swift */,
 				A5F3FD31225F5421007A718A /* ProfileViewController.xib */,
+				A5F3FD36225F5BD9007A718A /* HomeViewController.swift */,
+				A5F3FD37225F5BD9007A718A /* HomeViewController.xib */,
+				A5F3FD3A225F5BF0007A718A /* SearchViewController.swift */,
+				A5F3FD3B225F5BF0007A718A /* SearchViewController.xib */,
+				A5F3FD3E225F5C08007A718A /* NotificationsViewController.swift */,
+				A5F3FD3F225F5C08007A718A /* NotificationsViewController.xib */,
 				A5F3FD05225F53B2007A718A /* Assets.xcassets */,
 				A5F3FD07225F53B2007A718A /* LaunchScreen.storyboard */,
 				A5F3FD0A225F53B2007A718A /* Info.plist */,
@@ -238,8 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F3FD41225F5C08007A718A /* NotificationsViewController.xib in Resources */,
 				A5F3FD09225F53B2007A718A /* LaunchScreen.storyboard in Resources */,
 				A5F3FD06225F53B2007A718A /* Assets.xcassets in Resources */,
+				A5F3FD3D225F5BF0007A718A /* SearchViewController.xib in Resources */,
+				A5F3FD39225F5BD9007A718A /* HomeViewController.xib in Resources */,
 				A5F3FD33225F5421007A718A /* ProfileViewController.xib in Resources */,
 				A5F3FD2F225F53FB007A718A /* PhotoFeedViewController.xib in Resources */,
 			);
@@ -266,9 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5F3FD3C225F5BF0007A718A /* SearchViewController.swift in Sources */,
+				A5F3FD38225F5BD9007A718A /* HomeViewController.swift in Sources */,
 				A5F3FD01225F53AD007A718A /* ViewController.swift in Sources */,
 				A5F3FCFF225F53AD007A718A /* AppDelegate.swift in Sources */,
 				A5F3FD32225F5421007A718A /* ProfileViewController.swift in Sources */,
+				A5F3FD40225F5C08007A718A /* NotificationsViewController.swift in Sources */,
 				A5F3FD2E225F53FB007A718A /* PhotoFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
