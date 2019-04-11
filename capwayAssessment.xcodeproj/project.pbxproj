@@ -13,6 +13,10 @@
 		A5F3FD09225F53B2007A718A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5F3FD07225F53B2007A718A /* LaunchScreen.storyboard */; };
 		A5F3FD14225F53B2007A718A /* capwayAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3FD13225F53B2007A718A /* capwayAssessmentTests.swift */; };
 		A5F3FD1F225F53B2007A718A /* capwayAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3FD1E225F53B2007A718A /* capwayAssessmentUITests.swift */; };
+		A5F3FD2E225F53FB007A718A /* PhotoFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3FD2C225F53FB007A718A /* PhotoFeedViewController.swift */; };
+		A5F3FD2F225F53FB007A718A /* PhotoFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F3FD2D225F53FB007A718A /* PhotoFeedViewController.xib */; };
+		A5F3FD32225F5421007A718A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3FD30225F5421007A718A /* ProfileViewController.swift */; };
+		A5F3FD33225F5421007A718A /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5F3FD31225F5421007A718A /* ProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		A5F3FD1A225F53B2007A718A /* capwayAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = capwayAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F3FD1E225F53B2007A718A /* capwayAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = capwayAssessmentUITests.swift; sourceTree = "<group>"; };
 		A5F3FD20225F53B2007A718A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5F3FD2C225F53FB007A718A /* PhotoFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeedViewController.swift; sourceTree = "<group>"; };
+		A5F3FD2D225F53FB007A718A /* PhotoFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoFeedViewController.xib; sourceTree = "<group>"; };
+		A5F3FD30225F5421007A718A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A5F3FD31225F5421007A718A /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 			children = (
 				A5F3FCFE225F53AD007A718A /* AppDelegate.swift */,
 				A5F3FD00225F53AD007A718A /* ViewController.swift */,
+				A5F3FD2C225F53FB007A718A /* PhotoFeedViewController.swift */,
+				A5F3FD2D225F53FB007A718A /* PhotoFeedViewController.xib */,
+				A5F3FD30225F5421007A718A /* ProfileViewController.swift */,
+				A5F3FD31225F5421007A718A /* ProfileViewController.xib */,
 				A5F3FD05225F53B2007A718A /* Assets.xcassets */,
 				A5F3FD07225F53B2007A718A /* LaunchScreen.storyboard */,
 				A5F3FD0A225F53B2007A718A /* Info.plist */,
@@ -228,6 +240,8 @@
 			files = (
 				A5F3FD09225F53B2007A718A /* LaunchScreen.storyboard in Resources */,
 				A5F3FD06225F53B2007A718A /* Assets.xcassets in Resources */,
+				A5F3FD33225F5421007A718A /* ProfileViewController.xib in Resources */,
+				A5F3FD2F225F53FB007A718A /* PhotoFeedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +268,8 @@
 			files = (
 				A5F3FD01225F53AD007A718A /* ViewController.swift in Sources */,
 				A5F3FCFF225F53AD007A718A /* AppDelegate.swift in Sources */,
+				A5F3FD32225F5421007A718A /* ProfileViewController.swift in Sources */,
+				A5F3FD2E225F53FB007A718A /* PhotoFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
