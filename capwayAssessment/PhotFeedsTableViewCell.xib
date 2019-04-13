@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -40,18 +40,25 @@
                             <constraint firstAttribute="height" constant="35" id="vyT-Qg-03F"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkm-ol-Y2N">
+                        <rect key="frame" x="16" y="15" width="40" height="35"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="l7L-xI-Y5q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0DL-7P-eKa"/>
+                    <constraint firstItem="wkm-ol-Y2N" firstAttribute="leading" secondItem="qBB-r5-CKY" secondAttribute="leading" id="3YL-lD-Dry"/>
                     <constraint firstItem="qBB-r5-CKY" firstAttribute="leading" secondItem="l7L-xI-Y5q" secondAttribute="leading" id="3pH-8T-Ldy"/>
                     <constraint firstItem="vN6-Ba-KWG" firstAttribute="top" secondItem="l7L-xI-Y5q" secondAttribute="bottom" constant="8" symbolic="YES" id="5zQ-xu-Qkf"/>
                     <constraint firstItem="qBB-r5-CKY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="A7m-9W-smq"/>
                     <constraint firstItem="vN6-Ba-KWG" firstAttribute="top" secondItem="qBB-r5-CKY" secondAttribute="bottom" constant="8" symbolic="YES" id="E4L-ns-yE6"/>
                     <constraint firstItem="6qy-3T-a7a" firstAttribute="leading" secondItem="l7L-xI-Y5q" secondAttribute="trailing" constant="8" symbolic="YES" id="RQf-rE-7FU"/>
+                    <constraint firstItem="wkm-ol-Y2N" firstAttribute="top" secondItem="qBB-r5-CKY" secondAttribute="top" id="S88-i4-uVt"/>
                     <constraint firstItem="6qy-3T-a7a" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="TQV-0M-t3U"/>
                     <constraint firstItem="6qy-3T-a7a" firstAttribute="trailing" secondItem="vN6-Ba-KWG" secondAttribute="trailing" id="YLL-x1-m8T"/>
                     <constraint firstItem="vN6-Ba-KWG" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="YRh-Ax-F9B"/>
                     <constraint firstItem="6qy-3T-a7a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ZXg-oH-Fbx"/>
+                    <constraint firstItem="6qy-3T-a7a" firstAttribute="leading" secondItem="wkm-ol-Y2N" secondAttribute="trailing" constant="8" symbolic="YES" id="hxr-WY-IAW"/>
+                    <constraint firstItem="vN6-Ba-KWG" firstAttribute="top" secondItem="wkm-ol-Y2N" secondAttribute="bottom" constant="8" symbolic="YES" id="kQ8-SW-kOV"/>
                     <constraint firstItem="6qy-3T-a7a" firstAttribute="leading" secondItem="qBB-r5-CKY" secondAttribute="trailing" constant="8" symbolic="YES" id="kxx-vp-xtR"/>
                     <constraint firstItem="qBB-r5-CKY" firstAttribute="leading" secondItem="vN6-Ba-KWG" secondAttribute="leading" id="n1S-Xp-lmO"/>
                     <constraint firstItem="qBB-r5-CKY" firstAttribute="top" secondItem="l7L-xI-Y5q" secondAttribute="top" id="wlb-LH-yoc"/>
@@ -61,11 +68,12 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bord" destination="qBB-r5-CKY" id="v7q-If-O1s"/>
+                <outlet property="openButton" destination="wkm-ol-Y2N" id="p9o-Lq-q03"/>
                 <outlet property="pic" destination="vN6-Ba-KWG" id="A3Q-D1-nPX"/>
                 <outlet property="storyPic" destination="l7L-xI-Y5q" id="p8a-0u-dhf"/>
                 <outlet property="username" destination="6qy-3T-a7a" id="t1x-eO-tCL"/>
             </connections>
-            <point key="canvasLocation" x="134.78260869565219" y="145.3125"/>
+            <point key="canvasLocation" x="134.78260869565219" y="145.10869565217394"/>
         </tableViewCell>
     </objects>
 </document>

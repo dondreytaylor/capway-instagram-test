@@ -55,13 +55,16 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         //create flow layout for collection view cell
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.itemSize = CGSize(width: 100, height: 100)
-        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         flowLayout.scrollDirection = .vertical
         flowLayout.minimumInteritemSpacing = 0.0
         collecView.collectionViewLayout = flowLayout
         
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundColor")!)
+        self.collecView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundColor")!)
     }
     
+    //set up profile with information
     func setUpProfile() {
         self.profilePicc.image = profilePic ?? UIImage(named: "RonJ")
         self.profilePicc.layer.borderWidth = 0.5
@@ -75,6 +78,31 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         self.randomPhrase.text = randomPhraseArray.randomElement()
     }
     
+    //create pop up on click
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collecView.cellForItem(at: indexPath) as! ProfilePicCollectionViewCell
+        //create image view
+        let imageView = cell.profileImg
+        let newImageView = UIImageView(image: imageView!.image)
+        newImageView.frame = CGRect(x: UIScreen.main.bounds.minX + 50, y: UIScreen.main.bounds.maxY / 4, width: UIScreen.main.bounds.width / 1.3 , height: UIScreen.main.bounds.height / 2)
+        newImageView.backgroundColor = .clear
+        newImageView.contentMode = .scaleToFill
+        newImageView.isUserInteractionEnabled = true
+        //add tap action
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ProfileViewController.dismissFullscreenImage(_:)))
+        newImageView.addGestureRecognizer(tap)
+        self.view.addSubview(newImageView)
+        self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    //tap action
+    @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        sender.view?.removeFromSuperview()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15
     }
@@ -84,10 +112,14 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "profileCell", for: indexPath) as! ProfilePicCollectionViewCell
         
         cell.profileImg.image = randomPosts.randomElement()
+        cell.profileImg.contentMode = .scaleToFill
         
         return cell
     }
     
+    @IBAction func dismisss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     func loadStories() {
         //create for loop to load random stories
         for _ in 1...15 {

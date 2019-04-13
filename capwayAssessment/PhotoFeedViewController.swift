@@ -13,6 +13,7 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
     //create the arrays for stories, posts, usersnames and story profile pics
     var randomStories = [UIImage]()
     var randomPosts = [UIImage]()
+    var fullNames = ["Ron Jones","Di'Nasia Berry","Shannie Rae","Tink Johnson","Naomi Hollis","Livie Michelle","Layania quick","Janelle Shay","Rotasha Beats","Antonio Brown","Natasha Mandel","Ronald Darnell","Nova Super","Thor Asgard","Julian Champ"]
     var names = ["RonJ","Sunny_Di","ShanRay","Tink4","lilMissNomo","LivieBlivie", "princessYanie","ShayOk","MomsBerr", "PopsBerr","MomJon","PopJon", "Nova","Thor","Jules"]
     var storyPic = [UIImage(named: "RonJ"), UIImage(named: "SunnyDi"), UIImage(named: "ShanRay"), UIImage(named: "Tink4"), UIImage(named: "LilMissNomo"), UIImage(named: "LivieBlivie"), UIImage(named: "PrincessYanie"), UIImage(named: "ShayOk"), UIImage(named: "MomsBerr"), UIImage(named: "PopsBerr"), UIImage(named: "MomJon"), UIImage(named: "PopJon"), UIImage(named: "Nova"), UIImage(named: "Thor"), UIImage(named: "Jules")]
 
@@ -43,7 +44,9 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         collecView.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.lightText.cgColor
         
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundColor")!)
+        self.collecView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundColor")!)
+        self.tabView.backgroundColor = UIColor(patternImage: UIImage(named: "backgroundColor")!)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -96,6 +99,10 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         //add circle border
         cell.bord.image = UIImage(named: "circleBorder")
         
+        //add functionality to open profile
+        cell.openProfile.tag = indexPath.row
+        cell.openProfile.addTarget(self, action: #selector(openProfile), for: .touchUpInside)
+        
         return cell
     }
     
@@ -126,7 +133,45 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.bord.frame = cell.storyPic.frame
         cell.bord.image = UIImage(named: "circleBorder")
         
+        //add a button to send to profile page
+        
+        cell.openButton.tag = indexPath.row
+        cell.openButton.addTarget(self, action: #selector(openProfile), for: .touchUpInside)
         return cell
+    }
+    
+    //zoom image on click
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        let cell = tableView.cellForRow(at: indexPath) as! PhotFeedsTableViewCell
+        //
+        //create text view
+        let newImageView = UITextView()
+        newImageView.frame = CGRect(x: UIScreen.main.bounds.maxX / 2 - 100, y: UIScreen.main.bounds.maxY / 2 - 200, width: 200 , height: 200)
+        newImageView.backgroundColor = .white
+        newImageView.text = "CapWay is Awesome"
+        newImageView.textAlignment = .center
+        newImageView.isUserInteractionEnabled = true
+        //add dismiss action to tap
+        let tap = UITapGestureRecognizer(target: self, action: #selector(PhotoFeedViewController.dismissFullscreenImage(_:)))
+        newImageView.addGestureRecognizer(tap)
+        self.view.addSubview(newImageView)
+        self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+        //
+    }
+    
+    //dismiss action
+    @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        sender.view?.removeFromSuperview()
+    }
+    
+    //create function to send to profile page
+    @objc func openProfile(sender: UIButton) {
+        let profile = ProfileViewController(profilePics: storyPic[sender.tag]!, usernames: names[sender.tag], firstnames: fullNames[sender.tag])
+        present(profile, animated: true, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

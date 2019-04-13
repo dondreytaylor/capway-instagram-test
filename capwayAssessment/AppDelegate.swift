@@ -24,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //create tabs
         //let profile = ProfileViewController(
         let profile = ProfileViewController(profilePics: UIImage(named: "RonJ")!, usernames: "RonJones32", firstnames: "Ron Jones")
-        let photos = PhotoFeedViewController(nibName: "PhotoFeedViewController", bundle: nil)
-        let home = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let home = PhotoFeedViewController(nibName: "PhotoFeedViewController", bundle: nil)
+        let photos = HomeViewController(nibName: "HomeViewController", bundle: nil)
         let search = SearchViewController(nibName: "SearchViewController", bundle: nil)
         let likes = NotificationsViewController(nibName: "NotificationsViewController", bundle: nil)
         

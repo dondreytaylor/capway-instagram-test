@@ -31,6 +31,9 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5u8-Qs-GLh">
                         <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMo-Bl-3At">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
+                    </button>
                 </subviews>
             </view>
             <constraints>
@@ -42,8 +45,12 @@
                 <constraint firstItem="1Hj-8X-nJ4" firstAttribute="trailing" secondItem="lcC-yC-X8V" secondAttribute="trailing" id="bS3-d9-vU9"/>
                 <constraint firstItem="lcC-yC-X8V" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="br4-vI-iJ3"/>
                 <constraint firstItem="5u8-Qs-GLh" firstAttribute="top" secondItem="1Hj-8X-nJ4" secondAttribute="top" id="gEV-sS-Q1v"/>
+                <constraint firstItem="xMo-Bl-3At" firstAttribute="leading" secondItem="5u8-Qs-GLh" secondAttribute="leading" id="gNg-9I-cZ5"/>
+                <constraint firstItem="xMo-Bl-3At" firstAttribute="bottom" secondItem="5u8-Qs-GLh" secondAttribute="bottom" id="gpb-8V-Uu0"/>
+                <constraint firstItem="xMo-Bl-3At" firstAttribute="trailing" secondItem="1Hj-8X-nJ4" secondAttribute="trailing" id="lvw-H2-JeD"/>
                 <constraint firstItem="5u8-Qs-GLh" firstAttribute="bottom" secondItem="1Hj-8X-nJ4" secondAttribute="bottom" id="maK-WS-FA5"/>
                 <constraint firstAttribute="bottom" secondItem="1Hj-8X-nJ4" secondAttribute="bottom" constant="20" id="oDW-Wd-biw"/>
+                <constraint firstItem="xMo-Bl-3At" firstAttribute="top" secondItem="1Hj-8X-nJ4" secondAttribute="top" id="oI8-Ub-vKK"/>
                 <constraint firstAttribute="bottom" secondItem="lcC-yC-X8V" secondAttribute="bottom" id="rPU-Wd-ACj"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -51,6 +58,7 @@
             <connections>
                 <outlet property="bord" destination="5u8-Qs-GLh" id="RRt-hY-AOx"/>
                 <outlet property="img" destination="1Hj-8X-nJ4" id="yda-9T-nGG"/>
+                <outlet property="openProfile" destination="xMo-Bl-3At" id="ewZ-g5-Tnu"/>
                 <outlet property="username" destination="lcC-yC-X8V" id="frU-U2-z5A"/>
             </connections>
             <point key="canvasLocation" x="95.652173913043484" y="70.3125"/>
