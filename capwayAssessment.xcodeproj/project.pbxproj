@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A56D400222622E75002BA26E /* ProfilePicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D400022622E75002BA26E /* ProfilePicCollectionViewCell.swift */; };
+		A56D400322622E75002BA26E /* ProfilePicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A56D400122622E75002BA26E /* ProfilePicCollectionViewCell.xib */; };
 		A5EE5279225F9747009B334F /* PhotoFeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EE5277225F9747009B334F /* PhotoFeeCollectionViewCell.swift */; };
 		A5EE527A225F9747009B334F /* PhotoFeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5EE5278225F9747009B334F /* PhotoFeeCollectionViewCell.xib */; };
 		A5F26330225F891F00CA4981 /* PhotFeedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F2632E225F891F00CA4981 /* PhotFeedsTableViewCell.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A56D400022622E75002BA26E /* ProfilePicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicCollectionViewCell.swift; sourceTree = "<group>"; };
+		A56D400122622E75002BA26E /* ProfilePicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePicCollectionViewCell.xib; sourceTree = "<group>"; };
 		A5EE5277225F9747009B334F /* PhotoFeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		A5EE5278225F9747009B334F /* PhotoFeeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoFeeCollectionViewCell.xib; sourceTree = "<group>"; };
 		A5F2632E225F891F00CA4981 /* PhotFeedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotFeedsTableViewCell.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				A5EE5278225F9747009B334F /* PhotoFeeCollectionViewCell.xib */,
 				A5F3FD30225F5421007A718A /* ProfileViewController.swift */,
 				A5F3FD31225F5421007A718A /* ProfileViewController.xib */,
+				A56D400022622E75002BA26E /* ProfilePicCollectionViewCell.swift */,
+				A56D400122622E75002BA26E /* ProfilePicCollectionViewCell.xib */,
 				A5F3FD36225F5BD9007A718A /* HomeViewController.swift */,
 				A5F3FD37225F5BD9007A718A /* HomeViewController.xib */,
 				A5F3FD3A225F5BF0007A718A /* SearchViewController.swift */,
@@ -276,6 +282,7 @@
 				A5F3FD3D225F5BF0007A718A /* SearchViewController.xib in Resources */,
 				A5F3FD39225F5BD9007A718A /* HomeViewController.xib in Resources */,
 				A5F3FD33225F5421007A718A /* ProfileViewController.xib in Resources */,
+				A56D400322622E75002BA26E /* ProfilePicCollectionViewCell.xib in Resources */,
 				A5F3FD2F225F53FB007A718A /* PhotoFeedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5F3FD3C225F5BF0007A718A /* SearchViewController.swift in Sources */,
+				A56D400222622E75002BA26E /* ProfilePicCollectionViewCell.swift in Sources */,
 				A5F3FD38225F5BD9007A718A /* HomeViewController.swift in Sources */,
 				A5F3FD01225F53AD007A718A /* ViewController.swift in Sources */,
 				A5F3FCFF225F53AD007A718A /* AppDelegate.swift in Sources */,

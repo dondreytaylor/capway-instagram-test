@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,15 +19,15 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yN5-on-del">
-                    <rect key="frame" x="0.0" y="134" width="414" height="728"/>
+                    <rect key="frame" x="0.0" y="241" width="834" height="871"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5bb-h6-Rdv">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
+                    <rect key="frame" x="0.0" y="107" width="834" height="126"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="126" id="1m2-jn-paF"/>
@@ -39,19 +39,39 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrM-V5-fyW">
+                    <rect key="frame" x="20" y="78" width="157" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="157" id="UGw-P5-hrV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch All" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbl-31-EkZ">
+                    <rect key="frame" x="218" y="78" width="596" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="UrM-V5-fyW" firstAttribute="baseline" secondItem="Hbl-31-EkZ" secondAttribute="baseline" id="E6n-yq-8bJ"/>
                 <constraint firstItem="5bb-h6-Rdv" firstAttribute="trailing" secondItem="yN5-on-del" secondAttribute="trailing" id="G5d-rq-vti"/>
                 <constraint firstItem="yN5-on-del" firstAttribute="top" secondItem="5bb-h6-Rdv" secondAttribute="bottom" constant="8" symbolic="YES" id="N3p-AU-uHt"/>
                 <constraint firstItem="5bb-h6-Rdv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Tk2-Rv-4vu"/>
                 <constraint firstItem="5bb-h6-Rdv" firstAttribute="leading" secondItem="yN5-on-del" secondAttribute="leading" id="UhH-l3-2OG"/>
+                <constraint firstItem="UrM-V5-fyW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="Z9s-B4-1wD"/>
+                <constraint firstItem="5bb-h6-Rdv" firstAttribute="top" secondItem="UrM-V5-fyW" secondAttribute="bottom" constant="8" symbolic="YES" id="eP4-nv-QlU"/>
                 <constraint firstAttribute="trailing" secondItem="5bb-h6-Rdv" secondAttribute="trailing" id="hQh-4I-TEN"/>
-                <constraint firstItem="5bb-h6-Rdv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="p3Q-hv-zyb"/>
+                <constraint firstItem="5bb-h6-Rdv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="p3Q-hv-zyb"/>
                 <constraint firstItem="yN5-on-del" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="pgH-b2-t1d"/>
+                <constraint firstItem="Hbl-31-EkZ" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="wQa-py-sRm"/>
+                <constraint firstItem="Hbl-31-EkZ" firstAttribute="leading" secondItem="UrM-V5-fyW" secondAttribute="trailing" constant="41" id="zak-un-dkK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="54.375" y="47.5"/>
+            <point key="canvasLocation" x="53.623188405797109" y="46.875"/>
         </view>
     </objects>
 </document>

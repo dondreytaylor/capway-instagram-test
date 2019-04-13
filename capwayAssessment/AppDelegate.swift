@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow( frame: UIScreen.main.bounds)
         
         //create tabs
-        let profile = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+        //let profile = ProfileViewController(
+        let profile = ProfileViewController(profilePics: UIImage(named: "RonJ")!, usernames: "RonJones32", firstnames: "Ron Jones")
         let photos = PhotoFeedViewController(nibName: "PhotoFeedViewController", bundle: nil)
         let home = HomeViewController(nibName: "HomeViewController", bundle: nil)
         let search = SearchViewController(nibName: "SearchViewController", bundle: nil)
@@ -61,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //add tab bar to navigation controller
         navigationController.viewControllers = [tabBarController]
-        
+        navigationController.title = "Instagram"
         //make window visible and set root view
         self.window!.rootViewController = UINavigationController(rootViewController: tabBarController)
         self.window!.makeKeyAndVisible()

@@ -22,8 +22,6 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         //assign delegates and data sources
         tabView.delegate = self
         tabView.dataSource = self
@@ -42,8 +40,9 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         flowLayout.minimumInteritemSpacing = 0.0
         collecView.collectionViewLayout = flowLayout
         
-        //hide navigation bar
-        self.navigationController?.isNavigationBarHidden = true
+        collecView.layer.borderWidth = 0.5
+        view.layer.borderColor = UIColor.lightText.cgColor
+        
         
     }
     
@@ -85,11 +84,11 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.img.image = storyPic[indexPath.row]
         cell.username.text = names[indexPath.row]
         cell.img.layer.borderWidth = 1.0
-        cell.img.layer.masksToBounds = false
+        cell.img.layer.masksToBounds = true
 
         //make it a circle
-        cell.img.layer.cornerRadius = cell.img.frame.height / 2
-        cell.img.clipsToBounds = true
+        cell.img.layer.cornerRadius = cell.img.frame.height / 2 + 5
+       // cell.img.clipsToBounds = true
         
         //fit image in view
         cell.img.contentMode = .scaleToFill
@@ -116,7 +115,7 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.storyPic.layer.masksToBounds = false
        
         //make it a circle
-        cell.storyPic.layer.cornerRadius = cell.storyPic.frame.height / 2
+        cell.storyPic.layer.cornerRadius = cell.storyPic.frame.height / 2 + 2
         cell.storyPic.clipsToBounds = true
         
         //fit picture
