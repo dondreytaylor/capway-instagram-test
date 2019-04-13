@@ -10,6 +10,7 @@ import UIKit
 
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    //attach assets
     var profilePic: UIImage?
     var username: String?
     var firstname: String?
@@ -22,7 +23,11 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var randomPhrase: UILabel!
     @IBOutlet weak var collecView: UICollectionView!
     @IBOutlet weak var profilePicc: UIImageView!
+    
+    //create array for subtitle under username
     let randomPhraseArray = ["iOS Developer Atlanta GA", "Marketing Major Denver CO", "Mental Health Advocate Rock Hill SC", "Public Speaker Chicago IL", "Author and Poet Santa Fe CA", "Graphic Designer Miami FL"]
+    
+    //create initializer
     init(profilePics: UIImage, usernames: String, firstnames: String ) {
         self.profilePic = profilePics
         self.username = usernames
@@ -34,12 +39,15 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         super.init(coder: aDecoder)
     }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //set up elements
         setUpProfile()
         loadStories()
         
+        //assign delegates and register nib
         collecView.delegate = self
         collecView.dataSource = self
         collecView.register(UINib(nibName: "ProfilePicCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "profileCell")
@@ -72,6 +80,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //deque collection view cell
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "profileCell", for: indexPath) as! ProfilePicCollectionViewCell
         
         cell.profileImg.image = randomPosts.randomElement()
