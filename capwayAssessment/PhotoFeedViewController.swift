@@ -36,7 +36,7 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
 
         //create flow layout for collection view cell
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: 90, height: 90)
+        flowLayout.itemSize = CGSize(width: 65, height: 65)
         flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
         flowLayout.scrollDirection = .horizontal
         flowLayout.minimumInteritemSpacing = 0.0
@@ -84,10 +84,18 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         //configure image
         cell.img.image = storyPic[indexPath.row]
         cell.username.text = names[indexPath.row]
+        cell.img.layer.borderWidth = 1.0
+        cell.img.layer.masksToBounds = false
+
+        //make it a circle
         cell.img.layer.cornerRadius = cell.img.frame.height / 2
         cell.img.clipsToBounds = true
         
+        //fit image in view
         cell.img.contentMode = .scaleToFill
+        
+        //add circle border
+        cell.bord.image = UIImage(named: "circleBorder")
         
         return cell
     }
@@ -104,17 +112,26 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.pic.image = randomPosts[indexPath.row]
         cell.username.text = names[indexPath.row]
         cell.storyPic.image = storyPic[indexPath.row]
+        cell.storyPic.layer.borderWidth = 1.0
+        cell.storyPic.layer.masksToBounds = false
+       
+        //make it a circle
         cell.storyPic.layer.cornerRadius = cell.storyPic.frame.height / 2
         cell.storyPic.clipsToBounds = true
         
+        //fit picture
         cell.pic.contentMode = .scaleToFill
         cell.storyPic.contentMode = .scaleToFill
+        
+        //add circle border
+        cell.bord.frame = cell.storyPic.frame
+        cell.bord.image = UIImage(named: "circleBorder")
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 360
+        return 450
     }
 
 }

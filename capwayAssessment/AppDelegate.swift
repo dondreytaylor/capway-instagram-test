@@ -21,8 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //configure window
         self.window = UIWindow( frame: UIScreen.main.bounds)
         
-        //set navigationController properties
-        setUpAppearance()
         //create tabs
         let profile = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
         let photos = PhotoFeedViewController(nibName: "PhotoFeedViewController", bundle: nil)
@@ -39,25 +37,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //set up tab bar ui and labels
         profile.tabBarItem = UITabBarItem(
-            title: "Profile",
-            image: nil,
+            title: "",
+            image: UIImage(named: "profile"),
             tag: 5)
         photos.tabBarItem = UITabBarItem(
-            title: "PhotoFeed",
-            image: nil ,
+            title: "",
+            image: UIImage(named: "photos") ,
             tag:3)
         home.tabBarItem = UITabBarItem(
-            title: "Profile",
-            image: nil,
+            title: "",
+            image: UIImage(named: "home"),
             tag: 1)
         search.tabBarItem = UITabBarItem(
-            title: "PhotoFeed",
-            image: nil ,
+            title: "",
+            image: UIImage(named: "search") ,
             tag:2)
         likes.tabBarItem = UITabBarItem(
-            title: "Profile",
-            image: nil,
+            title: "",
+            image: UIImage(named: "likes"),
             tag:4)
+        
         
         
         //add tab bar to navigation controller
@@ -69,13 +68,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
         return true
-    }
-    
-    func setUpAppearance(){
-        UINavigationBar.appearance().barTintColor = UIColor.black
-        UINavigationBar.appearance().tintColor = UIColor.black
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

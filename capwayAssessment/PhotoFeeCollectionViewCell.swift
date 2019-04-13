@@ -12,6 +12,7 @@ class PhotoFeeCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var bord: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -13,6 +13,7 @@ class PhotFeedsTableViewCell: UITableViewCell {
     @IBOutlet weak var storyPic: UIImageView!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var pic: UIImageView!
+    @IBOutlet weak var bord: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
