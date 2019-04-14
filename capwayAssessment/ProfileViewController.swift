@@ -55,7 +55,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         //create flow layout for collection view cell
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.itemSize = CGSize(width: 100, height: 100)
-        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        flowLayout.sectionInset = UIEdgeInsets(top: 0.1, left: 0.1, bottom: 0.1, right: 0.1)
         flowLayout.scrollDirection = .vertical
         flowLayout.minimumInteritemSpacing = 0.0
         collecView.collectionViewLayout = flowLayout
@@ -112,7 +112,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "profileCell", for: indexPath) as! ProfilePicCollectionViewCell
         
         cell.profileImg.image = randomPosts.randomElement()
-        cell.profileImg.contentMode = .scaleToFill
+        cell.profileImg.contentMode = .scaleAspectFill
         
         return cell
     }

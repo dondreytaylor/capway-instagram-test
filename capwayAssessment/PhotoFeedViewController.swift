@@ -142,9 +142,7 @@ class PhotoFeedViewController: UIViewController, UITableViewDelegate, UITableVie
     
     //zoom image on click
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
-        let cell = tableView.cellForRow(at: indexPath) as! PhotFeedsTableViewCell
-        //
+
         //create text view
         let newImageView = UITextView()
         newImageView.frame = CGRect(x: UIScreen.main.bounds.maxX / 2 - 100, y: UIScreen.main.bounds.maxY / 2 - 200, width: 200 , height: 200)
